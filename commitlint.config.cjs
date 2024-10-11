@@ -1,0 +1,11 @@
+module.exports = {
+  rules: {
+    'header-max-length': [2, 'always', 72],
+    'type-empty': [2, 'never'],
+    'type-enum': [
+      2,
+      'always',
+      ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'chore'],
+    ],
+  },
+};
