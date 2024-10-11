@@ -1,6 +1,6 @@
 import {useMutation, useQueryClient} from "@tanstack/react-query";
-import {useToggle} from "../../../features/hooks/useToggle.ts";
-import {useFormHandler} from "../../../features/hooks/useForm.ts";
+import {useToggle} from "@/features/hooks/useToggle.ts";
+import {useFormHandler} from "@/features/hooks/useForm.ts";
 import {Button, Dialog, DialogPanel, DialogTitle, Input} from "@headlessui/react";
 import clsx from "clsx";
 import {FC} from "react";

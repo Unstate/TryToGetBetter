@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import User from "../../shared/ui/User.tsx";
+import User from "@/shared/ui/User.tsx";
 import {useQuery} from "@tanstack/react-query";
-import {getUsers} from "../../shared/api/users.ts";
-import Loading from "../../shared/ui/Loading.tsx";
-import ErrorBoundary from "../../shared/ui/ErrorBoundary.tsx";
-import Nav from "../../shared/ui/Nav.tsx";
+import {getUsers} from "@/shared/api/users.ts";
+import Loading from "@/shared/ui/Loading.tsx";
+import ErrorBoundary from "@/shared/ui/ErrorBoundary.tsx";
+import Nav from "@/shared/ui/Nav.tsx";
 
 const UsersPage = () => {
 

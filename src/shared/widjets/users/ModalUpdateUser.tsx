@@ -1,8 +1,8 @@
 import {useMutation, useQueryClient} from "@tanstack/react-query";
-import {useToggle} from "../../../features/hooks/useToggle.ts";
+import {useToggle} from "@/features/hooks/useToggle.ts";
 import {TPutUser, TUsers} from "../../types/users.ts";
 import {putUser} from "../../api/users.ts";
-import {useFormHandler} from "../../../features/hooks/useForm.ts";
+import {useFormHandler} from "@/features/hooks/useForm.ts";
 import {FC} from "react";
 import {Input} from "@headlessui/react";
 import clsx from "clsx";

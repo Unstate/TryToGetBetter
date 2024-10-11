@@ -1,11 +1,11 @@
-import Form from "../../shared/widjets/Form.tsx";
-import Nav from "../../shared/ui/Nav.tsx";
-import {CREATE_USER_FORM_FIELDS} from "../../features/constants/CreateUserForm.ts";
-import ModalCreateOrganization from "../../shared/widjets/organizations/ModalCreateOrganization.tsx";
+import Form from "@/shared/widjets/Form.tsx";
+import Nav from "@/shared/ui/Nav.tsx";
+import {CREATE_USER_FORM_FIELDS} from "@/features/constants/CreateUserForm.ts";
+import ModalCreateOrganization from "@/shared/widjets/organizations/ModalCreateOrganization.tsx";
 import {useQuery} from "@tanstack/react-query";
-import {getOrganizations} from "../../shared/api/organization.ts";
-import Loading from "../../shared/ui/Loading.tsx";
-import ErrorBoundary from "../../shared/ui/ErrorBoundary.tsx";
+import {getOrganizations} from "@/shared/api/organization.ts";
+import Loading from "@/shared/ui/Loading.tsx";
+import ErrorBoundary from "@/shared/ui/ErrorBoundary.tsx";
 
 const HomePage = () => {
 

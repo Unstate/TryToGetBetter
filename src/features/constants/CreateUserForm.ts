@@ -1,4 +1,4 @@
-import {TField} from "../../shared/widjets/Form.tsx";
+import {TField} from "@/shared/widjets/Form.tsx";
 
 export const CREATE_USER_FORM_FIELDS:TField[] = [
     {
