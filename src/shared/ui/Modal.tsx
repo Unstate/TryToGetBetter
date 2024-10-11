@@ -1,5 +1,5 @@
-import {Button, Dialog, DialogPanel, DialogTitle} from "@headlessui/react";
 import {FC, FormEvent, ReactNode} from "react";
+import {Button, Dialog, DialogPanel, DialogTitle} from "@headlessui/react";
 import { PencilIcon } from '@heroicons/react/20/solid'
 
 type TModal = {

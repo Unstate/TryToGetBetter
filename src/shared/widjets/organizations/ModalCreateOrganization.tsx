@@ -1,8 +1,8 @@
-import {useMutation, useQueryClient} from "@tanstack/react-query";
-import {useToggle} from "../../../features/hooks/useToggle.ts";
-import {useFormHandler} from "../../../features/hooks/useForm.ts";
-import {Input} from "@headlessui/react";
 import clsx from "clsx";
+import {useMutation, useQueryClient} from "@tanstack/react-query";
+import {useToggle} from "@/features/hooks/useToggle.ts";
+import {useFormHandler} from "@/features/hooks/useForm.ts";
+import {Input} from "@headlessui/react";
 import Modal from "../../ui/Modal.tsx";
 import {TOrganization, TPostOrganization} from "../../types/organization.ts";
 import {postOrganization} from "../../api/organization.ts";

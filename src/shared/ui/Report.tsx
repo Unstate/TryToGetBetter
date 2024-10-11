@@ -1,10 +1,12 @@
 import {FC} from "react";
-import {TReport} from "../types/reports.ts";
 import {useMutation, useQueryClient} from "@tanstack/react-query";
+
+import {TReport} from "../types/reports.ts";
 import {deleteReport} from "../api/reports.ts";
+import ModalChangeReport from "../widjets/reports/ModalChangeReport.tsx";
+
 import {TrashIcon} from "@heroicons/react/20/solid";
 import {Button} from "@headlessui/react";
-import ModalChangeReport from "../widjets/reports/ModalChangeReport.tsx";
 
 const Report:FC<TReport> = ({description,title, id, userId}) => {
 

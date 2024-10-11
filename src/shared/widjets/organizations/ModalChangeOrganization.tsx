@@ -1,9 +1,9 @@
+import {FC} from "react";
+import clsx from "clsx";
 import {useMutation, useQueryClient} from "@tanstack/react-query";
+import {Button, Dialog, DialogPanel, DialogTitle, Input} from "@headlessui/react";
 import {useToggle} from "@/features/hooks/useToggle.ts";
 import {useFormHandler} from "@/features/hooks/useForm.ts";
-import {Button, Dialog, DialogPanel, DialogTitle, Input} from "@headlessui/react";
-import clsx from "clsx";
-import {FC} from "react";
 import {TOrganization, TPutOrganization} from "../../types/organization.ts";
 import {putOrganization} from "../../api/organization.ts";
 

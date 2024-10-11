@@ -1,5 +1,5 @@
-import {Button} from "@headlessui/react";
 import {ButtonHTMLAttributes, FC, ReactNode} from "react";
+import {Button} from "@headlessui/react";
 import clsx from "clsx";
 
 type IButtonProps = {

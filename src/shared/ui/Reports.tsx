@@ -1,6 +1,6 @@
+import {FC} from "react";
 import Report from "./Report.tsx";
 import {TReports} from "../types/reports.ts";
-import {FC} from "react";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import {ChevronDownIcon} from "@heroicons/react/20/solid";
 

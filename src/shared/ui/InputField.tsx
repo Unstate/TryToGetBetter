@@ -1,6 +1,6 @@
+import {FC, InputHTMLAttributes} from "react";
 import { Description, Field, Input, Label } from "@headlessui/react";
 import clsx from "clsx";
-import {FC, InputHTMLAttributes} from "react";
 
 export type TInputField = {
   placeholder?:string;

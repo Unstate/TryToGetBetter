@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
 import {useQuery} from "@tanstack/react-query";
+
 import {getUser} from "@/shared/api/users.ts";
 import Loading from "@/shared/ui/Loading.tsx";
 import ErrorBoundary from "@/shared/ui/ErrorBoundary.tsx";
@@ -9,9 +10,11 @@ import {getReport} from "@/shared/api/reports.ts";
 import {getOrganization} from "@/shared/api/organization.ts";
 import Organization from "@/shared/ui/Organization.tsx";
 import Reports from "@/shared/ui/Reports.tsx";
-import {Button} from "@headlessui/react";
-import {useToggle} from "@/features/hooks/useToggle.ts";
 import ModalChangeOrganization from "@/shared/widjets/organizations/ModalChangeOrganization.tsx";
+
+import {Button} from "@headlessui/react";
+
+import {useToggle} from "@/features/hooks/useToggle.ts";
 
 const UserPage = () => {
 

@@ -1,20 +1,20 @@
-import {postUser} from "../api/users.ts";
-import {TPostUser} from "../types/users.ts";
+import {FC, useState} from "react";
+import {useNavigate} from "react-router-dom";
+import {createPortal} from "react-dom";
+import {useForm} from "react-hook-form";
 import {useMutation, useQueryClient} from "@tanstack/react-query";
 import {yupResolver} from "@hookform/resolvers/yup";
-import {validationSchema} from "../../features/schema/validationSchema.ts";
-import {useForm} from "react-hook-form";
-import {useNavigate} from "react-router-dom";
-import CustomButton from "../ui/CustomButton.tsx";
-import InputField from "../ui/InputField.tsx";
-import {FC, useState} from "react";
+import {validationSchema} from "@/features/schema/validationSchema.ts";
+import {useToggle} from "@/features/hooks/useToggle.ts";
 import {Menu, MenuButton, MenuItem, MenuItems} from "@headlessui/react";
 import {ChevronDownIcon, PencilIcon, TrashIcon} from "@heroicons/react/20/solid";
 import {TOrganization, TOrganizations} from "../types/organization.ts";
-import {createPortal} from "react-dom";
+import {TPostUser} from "../types/users.ts";
 import ModalChangeOrganization from "./organizations/ModalChangeOrganization.tsx";
-import {useToggle} from "../../features/hooks/useToggle.ts";
+import {postUser} from "../api/users.ts";
 import {deleteOrganization} from "../api/organization.ts";
+import CustomButton from "../ui/CustomButton.tsx";
+import InputField from "../ui/InputField.tsx";
 
 export type TField = {
     name: 'name' | 'email' | 'mobile',

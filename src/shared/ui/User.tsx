@@ -1,11 +1,12 @@
-import {Button} from "@headlessui/react";
 import {FC} from "react";
-import {TUsers} from "../types/users.ts";
-import {useMutation, useQueryClient} from "@tanstack/react-query";
-import {deleteUser} from "../api/users.ts";
 import {Link} from "react-router-dom";
-import ModalUpdateUser from "../widjets/users/ModalUpdateUser.tsx";
+import {Button} from "@headlessui/react";
 import { TrashIcon } from '@heroicons/react/20/solid'
+import {useMutation, useQueryClient} from "@tanstack/react-query";
+
+import {TUsers} from "../types/users.ts";
+import {deleteUser} from "../api/users.ts";
+import ModalUpdateUser from "../widjets/users/ModalUpdateUser.tsx";
 
 type TUser = {
     user: TUsers,

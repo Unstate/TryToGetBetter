@@ -1,12 +1,12 @@
+import {FC} from "react";
+import clsx from "clsx";
 import {useMutation, useQueryClient} from "@tanstack/react-query";
 import {useToggle} from "@/features/hooks/useToggle.ts";
 import {useFormHandler} from "@/features/hooks/useForm.ts";
 import {Input} from "@headlessui/react";
-import clsx from "clsx";
 import Modal from "../../ui/Modal.tsx";
 import {putReport} from "../../api/reports.ts";
 import {TPutReport, TReport} from "../../types/reports.ts";
-import {FC} from "react";
 
 export const ModalChangeReport:FC<TPutReport> = ({userId, id,description,title}) => {
 
